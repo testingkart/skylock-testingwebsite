@@ -1,0 +1,108 @@
+
+{% assign linkListClass = 0 %}
+
+{% if linklists[settings.footer-link-list-1].links.size > 0 %}
+{% assign linkListClass = linkListClass | plus: 1 %}
+{% endif %}
+{% if linklists[settings.footer-link-list-2].links.size > 0 %}
+{% assign linkListClass = linkListClass | plus: 1 %}
+{% endif %}
+{% if linklists[settings.footer-link-list-3].links.size > 0 %}
+{% assign linkListClass = linkListClass | plus: 1 %}
+{% endif %}
+
+<footer class="main-footer showing-{{linkListClass}}-lists">
+{% if linklists[settings.footer-link-list-1].links.size > 0 %}
+    <div class="footer-link-list {{linklists[settings.footer-link-list-1].handle}}">
+  {% if settings.footer-show-headers %}
+        <h4>{{ linklists[settings.footer-link-list-1].title }}</h4>
+  {% endif %}
+
+        <ul>
+        {% for link in linklists[settings.footer-link-list-1].links %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+        </ul>
+    </div>{% endif %}
+
+{% if linklists[settings.footer-link-list-2].links.size > 0 %}
+    <div class="footer-link-list {{linklists[settings.footer-link-list-2].handle}}">
+    {% if settings.footer-show-headers %}
+        <h4>{{ linklists[settings.footer-link-list-2].title }}</h4>
+    {% endif %}
+
+        <ul>
+        {% for link in linklists[settings.footer-link-list-2].links %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+        </ul>
+    </div>{% endif %}
+
+{% if linklists[settings.footer-link-list-3].links.size > 0 %}
+    <div class="footer-link-list {{linklists[settings.footer-link-list-3].handle}}">
+    {% if settings.footer-show-headers %}
+        <h4>{{ linklists[settings.footer-link-list-3].title }}</h4>
+    {% endif %}
+
+        <ul>
+        {% for link in linklists[settings.footer-link-list-3].links %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+        </ul>
+    </div>{% endif %}
+
+{% if settings.footer-show-sharing %}
+    <div id="social-buttons">
+        <a target="_blank" href="https://www.facebook.com/getskylock"><img src="{{'Facebook.png' | asset_url }}"></a>&nbsp; &nbsp;
+        <a target="_blank" href="https://twitter.com/getskylock"><img src="{{'Twitter.png' | asset_url }}" /></a> &nbsp; &nbsp;
+        <a target="_blank" href="http://instagram.com/getskylock"><img src="{{'Instagram.png' | asset_url }}" /></a>
+    </div>
+{% endif %}
+
+    <div class="footer-subscribe-form">
+        {% include 'mailing-list' %}
+    </div>
+
+    <div class="clearfix"></div>
+    <div class="footer-link-list hidden-xs">
+        <ul>
+            <li><a href="/pages/faq">FAQ</a> |</li>
+            <li><a target="_blank" href="https://medium.com/@getskylock">Blog</a> |</li>
+            <li><a href="https://angel.co/velo-labs/jobs">Jobs</a> |</li>
+            <li><a href="/pages/contact">Contact</a></li>
+        </ul>
+    </div>
+
+      {% capture year %}{{ "now" | date: "%Y" }}{% endcapture %}
+    <div role="contentinfo" class="copyright footer-module hidden-xs">
+        <ul>
+            <li><a href="/pages/privacy-policy">Privacy Policy</a> |</li>
+            <li><a href="/pages/terms-of-use">Terms of Use</a> |</li>  
+            <li><a href="/pages/terms-of-sale">Terms of Sale</a> |</li>  
+            <li>{{ 'general.copyright_text_html' | t: year: year }}</li>
+        </ul>
+    </div>
+
+    <div class="footer-links visible-xs-block">
+        <ul>
+            <li><a href="/pages/faq">FAQ</a> | </li>
+            <li><a href="https://medium.com/@getskylock">Blog</a> | </li>
+            <li><a href="https://angel.co/velo-labs/jobs">Jobs</a> | </li>
+            <li><a href="/pages/contact">Contact</a> </li>
+        </ul>
+    </div>
+    <div class="footer-links visible-xs-block">
+        <ul>
+            <li><a href="/pages/privacy-policy">Privacy&nbsp;Policy</a> | </li>
+            <li><a href="/pages/terms-of-use">Terms&nbsp;of&nbsp;Use</a></li>
+            <li><a href="/pages/terms-of-sale">Terms&nbsp;of&nbsp;Sale</a> </li>
+        </ul>
+    </div>
+    <div class="footer-links visible-xs-block">
+        <ul>
+            <li>{{ 'general.copyright_text_html' | t: year: year }}</li>
+        </ul>
+    </div>
+
+    <div class="clearfix"></div>
+</footer>

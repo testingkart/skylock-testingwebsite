@@ -1,0 +1,73 @@
+{% if collections[settings.home-order-now-product].products.size > 0 %}
+{% assign product = collections[settings.home-order-now-product].products.first %}
+{% assign selectedVariant = product.selected_or_first_available_variant %}
+<div class="home-module-wrapper order-now">    
+    <div class="home-order-now-image">
+      <img src="{{ 'frontproduct.png' | asset_url }}" style="width:100%;height: 780px;">
+      <div class="border-box-order-now">
+        	<div class="product-details">
+              <p class="product-price">
+                <span class="price">
+                  <span class="money">{{ selectedVariant.price | money | remove: '.00' }}</span>
+                  <span class="original money">
+                    {% if selectedVariant.compare_at_price > selectedVariant.price %}
+                      	retail<br/>
+                    	{{ selectedVariant.compare_at_price | money | remove: '.00' }}
+                    {% endif %}
+                  </span>
+                </span>
+              </p>
+            </div>
+
+            <form class="product-form" action="/products/skylock" method="post">
+
+              {% if product.variants.size > 1 %}
+                <div class="product-options">
+                  <select name="id" id="product-select" class="product-select">
+                    {% for variant in product.variants %}
+                      <option {% if variant == selectedVariant %} selected="selected" {% endif %} value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money }}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+              {% else %}
+                <input type="hidden" name="id" class="product-select" value="{{ product.variants[0].id }}" data-variant-title="{{ product.variants[0].title }}" />
+              {% endif %}
+
+              <div class="input-wrapper product-quantity">
+                <label for="quantity">{{ 'general.quantity' | t }}</label>
+                <input type="text" name="quantity" id="quantity" value="1" />
+              </div>
+
+              <div class="add-to-cart {% if settings.home-order-now-enable-express %}express{% endif %}">
+                {% if product.available %}
+                  <div class="product-form-submit-wrap">
+                    {% if settings.home-order-now-enable-express %}
+                      {% capture addToCartText %}{{ 'products.product.order_now' | t }}{% endcapture %}
+                    {% else %}
+                      {% capture addToCartText %}{{ 'products.product.add_to_cart' | t }}{% endcapture %}
+                    {% endif %}
+                    <input type="submit" value="PRE-ORDER NOW" class="home-cart-button"/>
+                    <div class="add-to-cart-loader"></div>
+                  </div>
+                  <p class="product-add-success-message">{{ 'products.product.success_html' | t: cart_link: cart_link, continue_link: continue_link, checkout_link: checkout_link, product: product_item  }}</p>
+                  <p class="product-add-error-message"></p>
+                {% else %}
+                  <input type="button" class="disabled" disabled="disabled" value="{{ 'products.product.sold_out' | t }}" />
+                {% endif %}
+                {% if settings.home-order-now-description.size > 0 %}
+                    <div class="product-description-bottom">
+                      {{ settings.home-order-now-description }}
+                    </div>
+                {% endif %}
+              </div>
+
+            </form>
+        	<script>
+              // required for splitting variants
+              // see ProductView
+              window.productJSON = {{ product | json }};
+            </script>
+      	</div>
+    </div>  
+</div>
+{% endif %}

@@ -1,0 +1,3176 @@
+<div class="section-info">
+  <h3>Startup <small>v5.0.5</small></h3>
+  <br />
+  Welcome to Startup! We suggest reading through our <a href="http://help.pixelunion.net/customer/portal/articles/1565085-documentation" target="_blank">documentation</a>, which provides a thorough overview of all the theme’s features. It also includes helpful instructions and design tips from the team. If you’re confused at any stage, don’t hesitate to contact us by sending a quick <a href="mailto:support@pixelunion.net">email</a> or <a href="http://twitter.com/pixelunion" target="_blank">tweet</a>. We’re available Monday through Friday during our office hours, 9 a.m. to 5 p.m. (PST).<br />
+  <br />
+  <strong>Note:</strong> The homepage modules appear on the homepage in the order that they’ve been presented on this page (Hero/Slideshow, Full-Width Features, Alternating Features, In-Line Features, etc).<br />
+</div>
+
+<fieldset>
+  <legend>Branding</legend>
+
+  <h3><strong>Logo</strong></h3>
+  <table>
+    <tr>
+      <td><label for="use-logo">Enable Logo</label></td>
+      <td><input name="use-logo" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="logo-image">Logo</label></td>
+      <td>
+        <input type="file" name="logo.png" data-max-width="99999" data-max-height="100" /><br />
+        <small>Maximum height is 100px. Larger images will be resized.</small>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="logo-height">Logo Height</label></td>
+      <td>
+        <input type="text" name="logo-height" /><br />
+        <small>Required for the checkout screen and retina images. Enter the numeric value, excluding the “px”</small>
+      </td>
+    </tr>
+  </table>
+  <br />
+  <h3><strong>Retina Logo</strong></h3>
+  <table>
+    <tr>
+      <td><label for="use-retina-logo">Enable Retina Logo</label></td>
+      <td><input name="use-retina-logo" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="logo-image-retina">Logo (Retina)</label></td>
+      <td>
+        <input type="file" name="logo-retina.png" data-max-width="99999" data-max-height="200" /><br />
+        <small>Retina logos must be twice the size of a regular logo. If your regular logo is 180x100 then your retina logo must be 360x200.</small>
+      </td>
+    </tr>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>Backgrounds &amp; Colours</legend>
+
+  <h3><strong>General</strong></h3>
+  <table>
+    <tr>
+      <td><label for="body-background-use-image">Enable Background Image</label></td>
+      <td><input name="body-background-use-image" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="background-image.jpg">Background Image</label></td>
+      <td><input name="background-image.jpg" type="file" /></td>
+    </tr>
+    <tr>
+      <td><label for="retina-background-image.jpg">Background Image (Retina)</label></td>
+      <td><input name="retina-background-image.jpg" type="file" /></td>
+    </tr>
+    <tr>
+      <td><label for="background-image-width">Background Image Width <strong>*</strong></label></td>
+      <td>
+        <input name="background-image-width" type="text" /><br />
+        <small>Required for retina images. Enter the numeric value, excluding the “px”</small>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="background-image-height">Background Image Height</label></td>
+      <td>
+        <input name="background-image-height" type="text" /><br />
+        <small>Required for retina images. Enter the numeric value, excluding the “px”</small>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="background-color">Background Colour</label></td>
+      <td><input name="background-color" class="color" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="body-text-color">Body Text Colour</label></td>
+      <td><input name="body-text-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="accent-color">Accent Colour</label></td>
+      <td><input name="accent-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="accent-hover-color">Accent Hover Colour</label></td>
+      <td><input name="accent-hover-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="heading-color">Heading Colour</label></td>
+      <td><input name="heading-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="meta-color">Meta Text Colour</label></td>
+      <td><input name="meta-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="error-color">Error Colour</label></td>
+      <td><input name="error-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="border-color">Border Colour</label></td>
+      <td><input name="border-color" class="color" type="text" value="" /></td>
+    </tr>
+  </table>
+
+  <h3><strong>Buttons</strong></h3>
+  <table>
+    <tr>
+      <td><label for="primary-button-color">Primary Button Text Colour</label></td>
+      <td><input name="primary-button-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="secondary-button-background">Secondary Button Background</label></td>
+      <td><input name="secondary-button-background" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="secondary-button-color">Secondary Button Text Colour</label></td>
+      <td><input name="secondary-button-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="secondary-button-background-hover">Secondary Button Background (Hover)</label></td>
+      <td><input name="secondary-button-background-hover" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="disabled-button-background">Disabled Button Background</label></td>
+      <td><input name="disabled-button-background" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="disabled-button-color">Disabled Button Text Colour</label></td>
+      <td><input name="disabled-button-color" class="color" type="text" value="" /></td>
+    </tr>
+  </table>
+
+  <h3><strong>Tables</strong></h3>
+  <table>
+    <tr>
+      <td><label for="table-alternating-background-mobile">Alternating Background Colour (Mobile)</label></td>
+      <td><input name="table-alternating-background-mobile" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="table-header-background">Header Background</label></td>
+      <td><input name="table-header-background" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="table-header-color">Header Text Colour</label></td>
+      <td><input name="table-header-color" class="color" type="text" value="" /></td>
+    </tr>
+  </table>
+
+  <h3><strong>Forms</strong></h3>
+  <table>
+    <tr>
+      <td><label for="form-select-background">Dropdown Background</label></td>
+      <td><input name="form-select-background" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="form-select-color">Dropdown Text Colour</label></td>
+      <td><input name="form-select-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="form-select-border-color">Dropdown Border Colour</label></td>
+      <td><input name="form-select-border-color" class="color" type="text" value="" /></td>
+    </tr>
+  </table>
+
+  <h3><strong>Header</strong></h3>
+  <table>
+    <tr>
+      <td><label for="header-background-color">Background Colour</label></td>
+      <td><input name="header-background-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="logo-color">Store Title Colour (If Not Using a Logo)</label></td>
+      <td><input name="logo-color" type="text" class="color" /></td>
+    </tr>
+    <tr>
+      <td><label for="header-action-icons-color">Icons Colour</label></td>
+      <td><input name="header-action-icons-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="header-action-icons-color-hover">Icons Colour (Hover)</label></td>
+      <td><input name="header-action-icons-color-hover" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="header-search-background-color">Search Field Background Colour</label></td>
+      <td><input name="header-search-background-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="header-search-text-color">Search Field Text Colour</label></td>
+      <td><input name="header-search-text-color" class="color" type="text" value="" /></td>
+    </tr>
+  </table>
+
+  <h3><strong>Navigation (in Header)</strong></h3>
+  <table>
+    <tr>
+      <td><label for="header-navigation-color">Link Colour</label></td>
+      <td><input name="header-navigation-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="header-navigation-color-hover">Link Colour (Hover)</label></td>
+      <td><input name="header-navigation-color-hover" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="header-navigation-dropdown-background-color">Dropdown Background Colour</label></td>
+      <td><input name="header-navigation-dropdown-background-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="header-navigation-dropdown-border-color">Dropdown Border Colour</label></td>
+      <td><input name="header-navigation-dropdown-border-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="header-navigation-dropdown-color">Dropdown Link Colour</label></td>
+      <td><input name="header-navigation-dropdown-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="header-navigation-dropdown-color-hover">Dropdown Link Colour (Hover)</label></td>
+      <td><input name="header-navigation-dropdown-color-hover" class="color" type="text" value="" /></td>
+    </tr>
+  </table>
+
+  <h3><strong>Footer</strong></h3>
+  <table>
+    <tr>
+      <td><label for="footer-background-use-image">Enable Background Image</label></td>
+      <td><input name="footer-background-use-image" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="footer-background-image.jpg">Background Image</label></td>
+      <td><input name="footer-background-image.jpg" type="file" /></td>
+    </tr>
+    <tr>
+      <td><label for="footer-retina-background-image.jpg">Background Image (Retina)</label></td>
+      <td><input name="footer-retina-background-image.jpg" type="file" /></td>
+    </tr>
+    <tr>
+      <td><label for="footer-background-image-width">Background Image Width</label></td>
+      <td>
+        <input name="footer-background-image-width" type="text" /><br />
+        <small>Required for retina images. Enter the numeric value, excluding the “px”</small>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="footer-background-image-height">Background Image Height</label></td>
+      <td>
+        <input name="footer-background-image-height" type="text" /><br />
+        <small>Required for retina images. Enter the numeric value, excluding the “px”</small>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td><label for="footer-background-color">Background Colour</label></td>
+      <td><input name="footer-background-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="footer-header-color">Heading Colour</label></td>
+      <td><input name="footer-header-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="footer-accent-color">Accent Colour</label></td>
+      <td><input name="footer-accent-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="footer-accent-color-hover">Accent Colour (Hover)</label></td>
+      <td><input name="footer-accent-color-hover" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="footer-share-text-color">Share Button Text Colour</label></td>
+      <td><input name="footer-share-text-color" class="color" type="text" value="" /></td>
+    </tr>
+  </table>
+
+  <h3>
+    <strong>Home: Slideshow and Hero Sections</strong><br />
+    <small>This section allows you to select background, title and text colours specifically for the Slideshow and Hero sections.</small>
+  </h3>
+  <table>
+    <tr>
+      <td><label for="home-hero-background-style">Hero Background Style</label></td>
+      <td>
+        <select name="home-hero-background-style">
+          <option value="image">Image</option>
+          <option value="color">Colour</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-hero-background-image.jpg">Hero Background Image</label></td>
+      <td><input name="home-hero-background-image.jpg" type="file" data-max-width="1920" data-max-height="9999" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-hero-background-color">Hero Background Colour</label></td>
+      <td><input name="home-hero-background-color" type="text" class="color" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-text-color">Text Colour</label></td>
+      <td><input name="slide-text-color" type="text" class="color" /></td>
+    </tr>
+  </table>
+
+  <h3><strong>Home: Contrast Style</strong></h3>
+  <table>
+    <tr>
+      <td><label for="contrast-background-color">Background Colour</label></td>
+      <td><input name="contrast-background-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="contrast-background-use-image">Enable Background Image</label></td>
+      <td><input name="contrast-background-use-image" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="contrast-background-image.jpg">Background Image</label></td>
+      <td><input name="contrast-background-image.jpg" type="file" /></td>
+    </tr>
+    <tr>
+      <td><label for="contrast-retina-background-image.jpg">Background Image (Retina)</label></td>
+      <td><input name="contrast-retina-background-image.jpg" type="file" /></td>
+    </tr>
+    <tr>
+      <td><label for="contrast-background-image-width">Background Image Width <strong>*</strong></label></td>
+      <td>
+        <input name="contrast-background-image-width" type="text" /><br />
+        <small>Required for retina images. Enter the numeric value, excluding the “px”</small>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="contrast-background-image-height">Background Image Height</label></td>
+      <td>
+        <input name="contrast-background-image-height" type="text" /><br />
+        <small>Required for retina images. Enter the numeric value, excluding the “px”</small>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="contrast-text-color">Text Colour</label></td>
+      <td><input name="contrast-text-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="contrast-accent-color">Accent Colour</label></td>
+      <td><input name="contrast-accent-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="contrast-accent-hover-color">Accent Hover Colour</label></td>
+      <td><input name="contrast-accent-hover-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="contrast-heading-color">Heading Colour</label></td>
+      <td><input name="contrast-heading-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="contrast-meta-color">Meta Text Colour</label></td>
+      <td><input name="contrast-meta-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="contrast-border-color">Border Colour</label></td>
+      <td><input name="contrast-border-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="contrast-error-color">Error Text Colour</label></td>
+      <td><input name="contrast-error-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="contrast-primary-button-color">Primary Button Text Colour</label></td>
+      <td><input name="contrast-primary-button-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="contrast-disabled-button-background">Disabled Button Background</label></td>
+      <td><input name="contrast-disabled-button-background" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="contrast-disabled-button-color">Disabled Button Text Colour</label></td>
+      <td><input name="contrast-disabled-button-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="contrast-form-text-input-background">Form: Text Input Background</label></td>
+      <td><input name="contrast-form-text-input-background" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="contrast-form-text-input-color">Form: Text Input Text Colour</label></td>
+      <td><input name="contrast-form-text-input-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="contrast-form-text-input-border-color">Form: Text Input Border Colour</label></td>
+      <td><input name="contrast-form-text-input-border-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="contrast-form-select-background">Form: Select Background</label></td>
+      <td><input name="contrast-form-select-background" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="contrast-form-select-color">Form: Select Text Colour</label></td>
+      <td><input name="contrast-form-select-color" class="color" type="text" value="" /></td>
+    </tr>
+    <tr>
+      <td><label for="contrast-form-select-border-color">Form: Select Border Colour</label></td>
+      <td><input name="contrast-form-select-border-color" class="color" type="text" value="" /></td>
+    </tr>
+  </table>
+
+
+</fieldset>
+
+<fieldset>
+  <legend>Fonts</legend>
+
+  <table>
+    <tr>
+      <td><label for="body-font">Body Font</label></td>
+      <td>
+      <select name="body-font">
+        <optgroup label="Sans Serif">
+          <option value="Lato, sans-serif" selected="selected">Lato</option>
+          <option value="'Open Sans', sans-serif">Open Sans</option>
+          <option value="'Source Sans Pro', sans-serif">Source Sans Pro</option>
+          <option value="Arimo, sans-serif">Arimo</option>
+          <option value="Karla, sans-serif">Karla</option>
+          <option value="Montserrat, sans-serif">Montserrat</option>
+          <option value="Roboto, sans-serif">Roboto</option>
+          <option value="'Helvetica Neue', Helvetica, Arial, sans-serif" selected="selected">Helvetica / Arial</option>
+        </optgroup>
+        <optgroup label="Condensed Sans Serif">
+          <option value="'Archivo Narrow', sans-serif">Archivo Narrow</option>
+          <option value="Oswald, sans-serif">Oswald</option>
+          <option value="'Fjalla One', sans-serif">Fjalla One</option>
+        </optgroup>
+        <optgroup label="Geometric Sans Serif">
+          <option value="'Titillium Web', sans-serif">Titillium Web</option>
+        </optgroup>
+        <optgroup label="Serif">
+          <option value="'PT Serif', serif">PT Serif</option>
+          <option value="Volkhov, serif">Volkhov</option>
+          <option value="Alegreya, serif">Alegreya</option>
+          <option value="Lora, serif">Lora</option>
+          <option value="Merriweather, serif">Merriweather</option>
+          <option value="'Droid Serif', serif">Droid Serif</option>
+          <option value="'Crimson Text', serif">Crimson Text</option>
+          <option value="'Playfair Display', serif">Playfair Display</option>
+          <option value="TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif">Times</option>
+          <option value="Georgia, Times, 'Times New Roman', serif">Georgia</option>
+        </optgroup>
+        <optgroup label="Slab Serif">
+          <option value="Rokkitt, serif">Rokkitt</option>
+          <option value="Arvo, serif">Arvo</option>
+          <option value="Bitter, serif">Bitter</option>
+          <option value="'Roboto Slab', serif">Roboto Slab</option>
+        </optgroup>
+        <optgroup label="Proxima Nova">
+          <option value="proxima_nova_rgregular">Proxima Nova Rgregular</option>
+          <option value="proxima_nova_rgbold">Proxima Nova Bold</option>
+          <option value="proxima_nova_condensedlight">Proxima Nova Condensed Light</option>
+          <option value="proxima_nova_condensedSBd">Proxima Nova Condensed SBd</option>
+          <option value="proxima_novablack">Proxima Nova Black</option>
+          <option value="proxima_novaextrabold">Proxima Nova Extra Bold</option>
+          <option value="proxima_novalight">Proxima Nova Light</option>
+          <option value="proxima_novasemibold">Proxima Nova Semi Bold</option>
+        </optgroup>  
+        
+      </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2"><h3></h3></td>
+    </tr>
+
+    <tr>
+      <td><label for="logo-font">Store Title Font</label></td>
+      <td>
+      <select name="logo-font">
+        <optgroup label="Sans Serif">
+          <option value="Lato, sans-serif" selected="selected">Lato</option>
+          <option value="'Open Sans', sans-serif">Open Sans</option>
+          <option value="'Source Sans Pro', sans-serif">Source Sans Pro</option>
+          <option value="Arimo, sans-serif">Arimo</option>
+          <option value="Karla, sans-serif">Karla</option>
+          <option value="Montserrat, sans-serif">Montserrat</option>
+          <option value="Roboto, sans-serif">Roboto</option>
+          <option value="'Raleway', sans-serif">Raleway</option>
+          <option value="'Helvetica Neue', Helvetica, Arial, sans-serif" selected="selected">Helvetica / Arial</option>
+        </optgroup>
+        <optgroup label="Condensed Sans Serif">
+          <option value="'Archivo Narrow', sans-serif">Archivo Narrow</option>
+          <option value="Oswald, sans-serif">Oswald</option>
+          <option value="'Fjalla One', sans-serif">Fjalla One</option>
+        </optgroup>
+        <optgroup label="Geometric Sans Serif">
+          <option value="'Titillium Web', sans-serif">Titillium Web</option>
+        </optgroup>
+        <optgroup label="Serif">
+          <option value="'PT Serif', serif">PT Serif</option>
+          <option value="Volkhov, serif">Volkhov</option>
+          <option value="Alegreya, serif">Alegreya</option>
+          <option value="Lora, serif">Lora</option>
+          <option value="Merriweather, serif">Merriweather</option>
+          <option value="'Droid Serif', serif">Droid Serif</option>
+          <option value="'Crimson Text', serif">Crimson Text</option>
+          <option value="'Playfair Display', serif">Playfair Display</option>
+          <option value="TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif">Times</option>
+          <option value="Georgia, Times, 'Times New Roman', serif">Georgia</option>
+        </optgroup>
+        <optgroup label="Slab Serif">
+          <option value="Rokkitt, serif">Rokkitt</option>
+          <option value="Arvo, serif">Arvo</option>
+          <option value="Bitter, serif">Bitter</option>
+          <option value="'Roboto Slab', serif">Roboto Slab</option>
+        </optgroup>
+         <optgroup label="Proxima Nova">
+          <option value="proxima_nova_rgregular">Proxima Nova Rgregular</option>
+          <option value="proxima_nova_rgbold">Proxima Nova Bold</option>
+          <option value="proxima_nova_condensedlight">Proxima Nova Condensed Light</option>
+          <option value="proxima_nova_condensedSBd">Proxima Nova Condensed SBd</option>
+          <option value="proxima_novablack">Proxima Nova Black</option>
+          <option value="proxima_novaextrabold">Proxima Nova Extra Bold</option>
+          <option value="proxima_novalight">Proxima Nova Light</option>
+          <option value="proxima_novasemibold">Proxima Nova Semi Bold</option>
+        </optgroup>  
+      </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="logo-font-weight">Store Title Font Weight</label></td>
+      <td>
+        <select name="logo-font-weight">
+          <option value="400">Normal</option>
+          <option value="700">Bold</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="logo-font-small-caps">Store Title Font Small Caps</label></td>
+      <td><input name="logo-font-small-caps" type="checkbox" /></td>
+    </tr>
+
+    <tr>
+      <td colspan="2"><h3></h3></td>
+    </tr>
+
+    <tr>
+      <td><label for="heading-font">Heading Font</label></td>
+      <td>
+      <select name="heading-font">
+        <optgroup label="Sans Serif">
+          <option value="Lato, sans-serif" selected="selected">Lato</option>
+          <option value="'Open Sans', sans-serif">Open Sans</option>
+          <option value="'Source Sans Pro', sans-serif">Source Sans Pro</option>
+          <option value="Arimo, sans-serif">Arimo</option>
+          <option value="Karla, sans-serif">Karla</option>
+          <option value="Montserrat, sans-serif">Montserrat</option>
+          <option value="Roboto, sans-serif">Roboto</option>
+          <option value="'Raleway', sans-serif">Raleway</option>
+          <option value="'Helvetica Neue', Helvetica, Arial, sans-serif" selected="selected">Helvetica / Arial</option>
+        </optgroup>
+        <optgroup label="Condensed Sans Serif">
+          <option value="'Archivo Narrow', sans-serif">Archivo Narrow</option>
+          <option value="Oswald, sans-serif">Oswald</option>
+          <option value="'Fjalla One', sans-serif">Fjalla One</option>
+        </optgroup>
+        <optgroup label="Geometric Sans Serif">
+          <option value="'Titillium Web', sans-serif">Titillium Web</option>
+        </optgroup>
+        <optgroup label="Serif">
+          <option value="'PT Serif', serif">PT Serif</option>
+          <option value="Volkhov, serif">Volkhov</option>
+          <option value="Alegreya, serif">Alegreya</option>
+          <option value="Lora, serif">Lora</option>
+          <option value="Merriweather, serif">Merriweather</option>
+          <option value="'Droid Serif', serif">Droid Serif</option>
+          <option value="'Crimson Text', serif">Crimson Text</option>
+          <option value="'Playfair Display', serif">Playfair Display</option>
+          <option value="TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif">Times</option>
+          <option value="Georgia, Times, 'Times New Roman', serif">Georgia</option>
+        </optgroup>
+        <optgroup label="Slab Serif">
+          <option value="Rokkitt, serif">Rokkitt</option>
+          <option value="Arvo, serif">Arvo</option>
+          <option value="Bitter, serif">Bitter</option>
+          <option value="'Roboto Slab', serif">Roboto Slab</option>
+        </optgroup>
+         <optgroup label="Proxima Nova">
+          <option value="proxima_nova_rgregular">Proxima Nova Rgregular</option>
+          <option value="proxima_nova_rgbold">Proxima Nova Bold</option>
+          <option value="proxima_nova_condensedlight">Proxima Nova Condensed Light</option>
+          <option value="proxima_nova_condensedSBd">Proxima Nova Condensed SBd</option>
+          <option value="proxima_novablack">Proxima Nova Black</option>
+          <option value="proxima_novaextrabold">Proxima Nova Extra Bold</option>
+          <option value="proxima_novalight">Proxima Nova Light</option>
+          <option value="proxima_novasemibold">Proxima Nova Semi Bold</option>
+        </optgroup>  
+      </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="heading-font-weight">Heading Font Weight</label></td>
+      <td>
+        <select name="heading-font-weight">
+          <option value="400">Normal</option>
+          <option value="700">Bold</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="heading-font-small-caps">Heading Font Small Caps</label></td>
+      <td><input name="heading-font-small-caps" type="checkbox" /></td>
+    </tr>
+
+    <tr>
+      <td colspan="2"><h3></h3></td>
+    </tr>
+
+    <tr>
+      <td><label for="section-heading-font">Section Title Font (Home Page / Footer)</label></td>
+      <td>
+      <select name="section-heading-font">
+        <optgroup label="Sans Serif">
+          <option value="Lato, sans-serif" selected="selected">Lato</option>
+          <option value="'Open Sans', sans-serif">Open Sans</option>
+          <option value="'Source Sans Pro', sans-serif">Source Sans Pro</option>
+          <option value="Arimo, sans-serif">Arimo</option>
+          <option value="Karla, sans-serif">Karla</option>
+          <option value="Montserrat, sans-serif">Montserrat</option>
+          <option value="Roboto, sans-serif">Roboto</option>
+          <option value="'Raleway', sans-serif">Raleway</option>
+          <option value="'Helvetica Neue', Helvetica, Arial, sans-serif" selected="selected">Helvetica / Arial</option>
+        </optgroup>
+        <optgroup label="Condensed Sans Serif">
+          <option value="'Archivo Narrow', sans-serif">Archivo Narrow</option>
+          <option value="Oswald, sans-serif">Oswald</option>
+          <option value="'Fjalla One', sans-serif">Fjalla One</option>
+        </optgroup>
+        <optgroup label="Geometric Sans Serif">
+          <option value="'Titillium Web', sans-serif">Titillium Web</option>
+        </optgroup>
+        <optgroup label="Serif">
+          <option value="'PT Serif', serif">PT Serif</option>
+          <option value="Volkhov, serif">Volkhov</option>
+          <option value="Alegreya, serif">Alegreya</option>
+          <option value="Lora, serif">Lora</option>
+          <option value="Merriweather, serif">Merriweather</option>
+          <option value="'Droid Serif', serif">Droid Serif</option>
+          <option value="'Crimson Text', serif">Crimson Text</option>
+          <option value="'Playfair Display', serif">Playfair Display</option>
+          <option value="TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif">Times</option>
+          <option value="Georgia, Times, 'Times New Roman', serif">Georgia</option>
+        </optgroup>
+        <optgroup label="Slab Serif">
+          <option value="Rokkitt, serif">Rokkitt</option>
+          <option value="Arvo, serif">Arvo</option>
+          <option value="Bitter, serif">Bitter</option>
+          <option value="'Roboto Slab', serif">Roboto Slab</option>
+        </optgroup>
+         <optgroup label="Proxima Nova">
+          <option value="proxima_nova_rgregular">Proxima Nova Rgregular</option>
+          <option value="proxima_nova_rgbold">Proxima Nova Bold</option>
+          <option value="proxima_nova_condensedlight">Proxima Nova Condensed Light</option>
+          <option value="proxima_nova_condensedSBd">Proxima Nova Condensed SBd</option>
+          <option value="proxima_novablack">Proxima Nova Black</option>
+          <option value="proxima_novaextrabold">Proxima Nova Extra Bold</option>
+          <option value="proxima_novalight">Proxima Nova Light</option>
+          <option value="proxima_novasemibold">Proxima Nova Semi Bold</option>
+        </optgroup>  
+      </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="section-heading-font-weight">Section Title Font Weight</label></td>
+      <td>
+        <select name="section-heading-font-weight">
+          <option value="400">Normal</option>
+          <option value="700">Bold</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="section-heading-font-small-caps">Section Title Font Small Caps</label></td>
+      <td><input name="section-heading-font-small-caps" type="checkbox" /></td>
+    </tr>
+
+    <tr>
+      <td colspan="2"><h3></h3></td>
+    </tr>
+
+    <tr>
+      <td><label for="meta-font">Meta Font</label></td>
+      <td>
+      <select name="meta-font">
+        <optgroup label="Sans Serif">
+          <option value="Lato, sans-serif" selected="selected">Lato</option>
+          <option value="'Open Sans', sans-serif">Open Sans</option>
+          <option value="'Source Sans Pro', sans-serif">Source Sans Pro</option>
+          <option value="Arimo, sans-serif">Arimo</option>
+          <option value="Karla, sans-serif">Karla</option>
+          <option value="Montserrat, sans-serif">Montserrat</option>
+          <option value="Roboto, sans-serif">Roboto</option>
+          <option value="'Raleway', sans-serif">Raleway</option>
+          <option value="'Helvetica Neue', Helvetica, Arial, sans-serif" selected="selected">Helvetica / Arial</option>
+        </optgroup>
+        <optgroup label="Condensed Sans Serif">
+          <option value="'Archivo Narrow', sans-serif">Archivo Narrow</option>
+          <option value="Oswald, sans-serif">Oswald</option>
+          <option value="'Fjalla One', sans-serif">Fjalla One</option>
+        </optgroup>
+        <optgroup label="Geometric Sans Serif">
+          <option value="'Titillium Web', sans-serif">Titillium Web</option>
+        </optgroup>
+        <optgroup label="Serif">
+          <option value="'PT Serif', serif">PT Serif</option>
+          <option value="Volkhov, serif">Volkhov</option>
+          <option value="Alegreya, serif">Alegreya</option>
+          <option value="Lora, serif">Lora</option>
+          <option value="Merriweather, serif">Merriweather</option>
+          <option value="'Droid Serif', serif">Droid Serif</option>
+          <option value="'Crimson Text', serif">Crimson Text</option>
+          <option value="'Playfair Display', serif">Playfair Display</option>
+          <option value="TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif">Times</option>
+          <option value="Georgia, Times, 'Times New Roman', serif">Georgia</option>
+        </optgroup>
+        <optgroup label="Slab Serif">
+          <option value="Rokkitt, serif">Rokkitt</option>
+          <option value="Arvo, serif">Arvo</option>
+          <option value="Bitter, serif">Bitter</option>
+          <option value="'Roboto Slab', serif">Roboto Slab</option>
+        </optgroup>
+         <optgroup label="Proxima Nova">
+          <option value="proxima_nova_rgregular">Proxima Nova Rgregular</option>
+          <option value="proxima_nova_rgbold">Proxima Nova Bold</option>
+          <option value="proxima_nova_condensedlight">Proxima Nova Condensed Light</option>
+          <option value="proxima_nova_condensedSBd">Proxima Nova Condensed SBd</option>
+          <option value="proxima_novablack">Proxima Nova Black</option>
+          <option value="proxima_novaextrabold">Proxima Nova Extra Bold</option>
+          <option value="proxima_novalight">Proxima Nova Light</option>
+          <option value="proxima_novasemibold">Proxima Nova Semi Bold</option>
+        </optgroup>  
+      </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="meta-font-weight">Meta Font Weight</label></td>
+      <td>
+        <select name="meta-font-weight">
+          <option value="400">Normal</option>
+          <option value="700">Bold</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="meta-font-small-caps">Meta Font Small Caps</label></td>
+      <td><input name="meta-font-small-caps" type="checkbox" /></td>
+    </tr>
+
+    <tr>
+      <td colspan="2"><h3></h3></td>
+    </tr>
+
+    <tr>
+      <td><label for="primary-button-font">Button Font</label></td>
+      <td>
+      <select name="primary-button-font">
+        <optgroup label="Sans Serif">
+          <option value="Lato, sans-serif" selected="selected">Lato</option>
+          <option value="'Open Sans', sans-serif">Open Sans</option>
+          <option value="'Source Sans Pro', sans-serif">Source Sans Pro</option>
+          <option value="Arimo, sans-serif">Arimo</option>
+          <option value="Karla, sans-serif">Karla</option>
+          <option value="Montserrat, sans-serif">Montserrat</option>
+          <option value="Roboto, sans-serif">Roboto</option>
+          <option value="'Raleway', sans-serif">Raleway</option>
+          <option value="'Helvetica Neue', Helvetica, Arial, sans-serif" selected="selected">Helvetica / Arial</option>
+        </optgroup>
+        <optgroup label="Condensed Sans Serif">
+          <option value="'Archivo Narrow', sans-serif">Archivo Narrow</option>
+          <option value="Oswald, sans-serif">Oswald</option>
+          <option value="'Fjalla One', sans-serif">Fjalla One</option>
+        </optgroup>
+        <optgroup label="Geometric Sans Serif">
+          <option value="'Titillium Web', sans-serif">Titillium Web</option>
+        </optgroup>
+        <optgroup label="Serif">
+          <option value="'PT Serif', serif">PT Serif</option>
+          <option value="Volkhov, serif">Volkhov</option>
+          <option value="Alegreya, serif">Alegreya</option>
+          <option value="Lora, serif">Lora</option>
+          <option value="Merriweather, serif">Merriweather</option>
+          <option value="'Droid Serif', serif">Droid Serif</option>
+          <option value="'Crimson Text', serif">Crimson Text</option>
+          <option value="'Playfair Display', serif">Playfair Display</option>
+          <option value="TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif">Times</option>
+          <option value="Georgia, Times, 'Times New Roman', serif">Georgia</option>
+        </optgroup>
+        <optgroup label="Slab Serif">
+          <option value="Rokkitt, serif">Rokkitt</option>
+          <option value="Arvo, serif">Arvo</option>
+          <option value="Bitter, serif">Bitter</option>
+          <option value="'Roboto Slab', serif">Roboto Slab</option>
+        </optgroup>
+         <optgroup label="Proxima Nova">
+          <option value="proxima_nova_rgregular">Proxima Nova Rgregular</option>
+          <option value="proxima_nova_rgbold">Proxima Nova Bold</option>
+          <option value="proxima_nova_condensedlight">Proxima Nova Condensed Light</option>
+          <option value="proxima_nova_condensedSBd">Proxima Nova Condensed SBd</option>
+          <option value="proxima_novablack">Proxima Nova Black</option>
+          <option value="proxima_novaextrabold">Proxima Nova Extra Bold</option>
+          <option value="proxima_novalight">Proxima Nova Light</option>
+          <option value="proxima_novasemibold">Proxima Nova Semi Bold</option>
+        </optgroup>  
+      </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="primary-button-font-weight">Button Font Weight</label></td>
+      <td>
+        <select name="primary-button-font-weight">
+          <option value="400">Normal</option>
+          <option value="700">Bold</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="primary-button-font-small-caps">Button Font Small Caps</label></td>
+      <td><input name="primary-button-font-small-caps" type="checkbox" /></td>
+    </tr>
+
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>Header &amp; Navigation</legend>
+
+  <h3><strong>Header</strong></h3>
+  <table>
+    <tr>
+      <td><label for="header-sticky">Enable Sticky Header</label></td>
+      <td><input name="header-sticky" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="header-show-cart">Display Cart Icon</label></td>
+      <td><input name="header-show-cart" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="header-show-search">Display Search Icon</label></td>
+      <td><input name="header-show-search" type="checkbox" /></td>
+    </tr>
+  </table>
+
+  <h3><strong>Navigation</strong></h3>
+  <table>
+    <tr>
+      <td><label for="header-navigation-location">Layout</label></td>
+      <td>
+        <select name="header-navigation-location">
+          <option value="drawer">Drawer</option>
+          <option value="header">Header</option>
+          <option value="below-header">Below header</option>
+        </select><br />
+        <small>When the navigation layout is set to 'Header,' navigation will collapse into the 'Navigation Drawer' if there isn't enough space.</small>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="use-mega-nav">Enable mega-navigation system</label></td>
+      <td>
+        <input name="use-mega-nav" type="checkbox" />
+        <small>The mega-navigation system is only functional when the navigation layout is set to 'Below Header.'</small>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="mega-nav-trigger">Mega-nav trigger</label></td>
+      <td><input name="mega-nav-trigger" id="mega-nav-trigger" type="text" /></td>
+    </tr>
+  </table>
+
+  <h3><strong>Breadcrumbs</strong></h3>
+  <table>
+    <tr>
+      <td><label for="header-show-breadcrumbs">Enable Breadcrumbs</label></td>
+      <td><input name="header-show-breadcrumbs" type="checkbox" /></td>
+    </tr>
+  </table>
+
+</fieldset>
+
+<fieldset>
+  <legend>Currency Options</legend>
+  <table>
+    <tr>
+      <td><label for="show-currency-switcher">Enable Currency Switcher</label></td>
+      <td><input id="show-currency-switcher" name="show-currency-switcher" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="currency-switcher-format">Money Format</label></td>
+      <td>
+        <select name="currency-switcher-format" id="currency-switcher-format">
+          <option value="money_format">Without Currency, ex: $10.00</option>
+          <option value="money_with_currency_format" selected="selected">With Currency, ex: $10 CAD</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="currency-switcher-supported-currencies">Currencies You Wish to Support</label></td>
+      <td>
+        <input name="currency-switcher-supported-currencies" id="currency-switcher-supported-currencies" type="text" class="text long" value="CAD USD" /><br />
+        <small>Separate <a target="_blank" href="http://www.xe.com/iso4217.php">currency codes</a> with a space. Example: <em>CAD USD</em>.</small>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="currency-switcher-default">Default Currency</label></td>
+      <td><input name="currency-switcher-default" id="currency-switcher-default" type="text" class="text" value="CAD" /></td>
+    </tr>
+    <tr>
+      <td colspan="2"><small><strong>Note: </strong>While prices can be displayed on the store front in different currencies, Shopify will process orders in the shop’s main currency.</small></td>
+    </tr>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>Home: Hero</legend>
+
+  <h3><strong>General</strong></h3>
+  <table>
+    <tr>
+      <td><label for="home-show-hero">Enable Hero Module</label></td>
+      <td>
+        <input name="home-show-hero" type="checkbox" /><br />
+        <small>Both the hero and the slideshow module cannot be active at the same time.</small>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-hero-shadows">Enable Text Drop Shadow</label></td>
+      <td><input name="home-hero-shadows" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td colspan="2"><small><strong>Note:</strong> To change the background, text and button colours, find the “Home: Slideshow and Hero Sections” menu within the Backgrounds &amp; Colours section.</small></td>
+    </tr>
+  </table>
+
+  <br />
+  <h3><strong>Content</strong></h3>
+  <table>
+    <tr>
+      <td><label for="home-hero-product-image.png">Product Image</label></td>
+      <td><input name="home-hero-product-image.png" type="file" data-max-width="1920" data-max-height="9999" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-hero-title">Title</label></td>
+      <td><input name="home-hero-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-hero-subtitle">Subtitle</label></td>
+      <td><input name="home-hero-subtitle" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-hero-small-text">Small Text</label></td>
+      <td><input name="home-hero-small-text" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-hero-cta">Call to Action (Button)</label></td>
+      <td><input name="home-hero-cta" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-hero-url">URL</label></td>
+      <td><input name="home-hero-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-hero-video-url">Youtube Video URL</label></td>
+      <td><input name="home-hero-video-url" type="text" /></td>
+    </tr>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>Home: Slideshow</legend>
+
+  <table>
+    <tr>
+      <td><label for="show-slideshow">Enable Slideshow</label></td>
+      <td>
+        <input name="show-slideshow" type="checkbox" /><br />
+        <small>Both the hero and the slideshow module cannot be active at the same time.</small>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="slideshow-layout">Layout</label></td>
+      <td>
+        <select name="slideshow-layout">
+          <option value="content-width">Content Width</option>
+          <option value="full-width">Full-Width</option>
+          <option value="full-bleed">Full-Width, Full-Bleed</option>
+          <option value="opening-screen">Full-Width/Height, Full-Bleed</option>
+        </select><br />
+        <small><a href="http://cdn.pixelunion.net/startup/startup-slideshow-layouts.png" target="_blank">Style examples</a></small>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="header-bleed-colors-override">Header Colours Override</label></td>
+      <td>
+        <select name="header-bleed-colors-override">
+          <option value="default" selected="selected">Default Colours</option>
+          <option value="light">White</option>
+          <option value="dark">Black</option>
+        </select><br />
+        <small>If your header colours and full-bleed slideshow image are clashing, this will override the homepage header colours to be only white or black.</small>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"><small>If you have enabled one of the full-bleed slideshows and have selected either the "White" or "Black" Header Colours Override you may want to upload additional logos:</small></td>
+    </tr>
+    <tr>
+      <td><label for="home-bleed-use-logo">Enable Logo Override</label></td>
+      <td><input name="home-bleed-use-logo" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="bleed-logo-image">Regular Logo Override</label></td>
+      <td><input type="file" name="bleed-logo.png" data-max-width="300" data-max-height="200" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-bleed-use-logo-retina">Enable Retina Logo Override</label></td>
+      <td><input name="home-bleed-use-logo-retina" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="bleed-logo-image-retina">Retina Logo Override</label></td>
+      <td><input type="file" name="bleed-logo-retina.png" data-max-width="600" data-max-height="400" /></td>
+    </tr>
+    <tr>
+      <td colspan="2"><hr /></td>
+    </tr>
+    <tr>
+      <td><label for="slideshow-transition">Transition</label></td>
+      <td>
+        <select name="slideshow-transition">
+          <option value="transition-slide">Slide</option>
+          <option value="transition-fade">Fade</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="show-slideshow-navigation">Enable Slideshow Navigation (Prev/Next)</label></td>
+      <td><input name="show-slideshow-navigation" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="show-slideshow-pagination">Enable Slideshow Pagination</label></td>
+      <td><input name="show-slideshow-pagination" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="slideshow-autoplay">Enable Autoplay</label></td>
+      <td><input name="slideshow-autoplay" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="slideshow-autoplay-delay">Autoplay Delay (in Seconds)</label></td>
+      <td><input name="slideshow-autoplay-delay" type="text" /></td>
+    </tr>
+    <tr>
+      <td colspan="2"><small><strong>Note:</strong> To change the text colours on the slide, including navigation, find the “Home: Slideshow and Hero Sections” menu within the Backgrounds &amp; Colours section.</small></td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Slide 1</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="show-slide-1">Enable Slide</label></td>
+      <td><input name="show-slide-1" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-1-text-alignment">Text Alignment</label></td>
+      <td>
+        <select name="slide-1-text-alignment">
+          <option value="left">Left</option>
+          <option value="center">Center</option>
+          <option value="right">Right</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="slide-1-shadows">Enable Text Drop Shadow</label></td>
+      <td><input name="slide-1-shadows" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td colspan="2"><br /><strong>Content:</strong></td>
+    </tr>
+    <tr>
+      <td><label for="slide-1-image.jpg">Image</label></td>
+      <td><input type="file" name="slide-1-image.jpg" data-max-width="9999" data-max-height="9999" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-1-title">Title</label></td>
+      <td><input name="slide-1-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-1-subtitle">Subtitle</label></td>
+      <td><input name="slide-1-subtitle" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-1-small-text">Small Text</label></td>
+      <td><input name="slide-1-small-text" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-1-cta">Call to Action (Button)</label></td>
+      <td><input name="slide-1-cta" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-1-url">URL</label></td>
+      <td><input name="slide-1-url" type="text" /></td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Slide 2</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="show-slide-2">Enable Slide</label></td>
+      <td><input name="show-slide-2" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-2-text-alignment">Text Alignment</label></td>
+      <td>
+        <select name="slide-2-text-alignment">
+          <option value="left">Left</option>
+          <option value="center">Center</option>
+          <option value="right">Right</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="slide-2-shadows">Enable Text Drop Shadow</label></td>
+      <td><input name="slide-2-shadows" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td colspan="2"><br /><strong>Content:</strong></td>
+    </tr>
+    <tr>
+      <td><label for="slide-2-image.jpg">Image</label></td>
+      <td><input type="file" name="slide-2-image.jpg" data-max-width="9999" data-max-height="9999" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-2-title">Title</label></td>
+      <td><input name="slide-2-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-2-subtitle">Subtitle</label></td>
+      <td><input name="slide-2-subtitle" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-2-small-text">Small Text</label></td>
+      <td><input name="slide-2-small-text" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-2-cta">Call to Action (Button)</label></td>
+      <td><input name="slide-2-cta" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-2-url">URL</label></td>
+      <td><input name="slide-2-url" type="text" /></td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Slide 3</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="show-slide-3">Enable Slide</label></td>
+      <td><input name="show-slide-3" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-3-text-alignment">Text Alignment</label></td>
+      <td>
+        <select name="slide-3-text-alignment">
+          <option value="left">Left</option>
+          <option value="center">Center</option>
+          <option value="right">Right</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="slide-3-shadows">Enable Text Drop Shadow</label></td>
+      <td><input name="slide-3-shadows" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td colspan="2"><br /><strong>Content:</strong></td>
+    </tr>
+    <tr>
+      <td><label for="slide-3-image.jpg">Image</label></td>
+      <td><input type="file" name="slide-3-image.jpg" data-max-width="9999" data-max-height="9999" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-3-title">Title</label></td>
+      <td><input name="slide-3-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-3-subtitle">Subtitle</label></td>
+      <td><input name="slide-3-subtitle" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-3-small-text">Small Text</label></td>
+      <td><input name="slide-3-small-text" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-3-cta">Call to Action (Button)</label></td>
+      <td><input name="slide-3-cta" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-3-url">URL</label></td>
+      <td><input name="slide-3-url" type="text" /></td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Slide 4</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="show-slide-4">Enable Slide</label></td>
+      <td><input name="show-slide-4" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-4-text-alignment">Text Alignment</label></td>
+      <td>
+        <select name="slide-4-text-alignment">
+          <option value="left">Left</option>
+          <option value="center">Center</option>
+          <option value="right">Right</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="slide-4-shadows">Enable Text Drop Shadow</label></td>
+      <td><input name="slide-4-shadows" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td colspan="2"><br /><strong>Content:</strong></td>
+    </tr>
+    <tr>
+      <td><label for="slide-4-image.jpg">Image</label></td>
+      <td><input type="file" name="slide-4-image.jpg" data-max-width="9999" data-max-height="9999" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-4-title">Title</label></td>
+      <td><input name="slide-4-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-4-subtitle">Subtitle</label></td>
+      <td><input name="slide-4-subtitle" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-4-small-text">Small Text</label></td>
+      <td><input name="slide-4-small-text" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-4-cta">Call to Action (Button)</label></td>
+      <td><input name="slide-4-cta" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-4-url">URL</label></td>
+      <td><input name="slide-4-url" type="text" /></td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Slide 5</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="show-slide-5">Enable Slide</label></td>
+      <td><input name="show-slide-5" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-5-text-alignment">Text Alignment</label></td>
+      <td>
+        <select name="slide-5-text-alignment">
+          <option value="left">Left</option>
+          <option value="center">Center</option>
+          <option value="right">Right</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="slide-5-shadows">Enable Text Drop Shadow</label></td>
+      <td><input name="slide-5-shadows" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td colspan="2"><br /><strong>Content:</strong></td>
+    </tr>
+    <tr>
+      <td><label for="slide-5-image.jpg">Image</label></td>
+      <td><input type="file" name="slide-5-image.jpg" data-max-width="9999" data-max-height="9999" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-5-title">Title</label></td>
+      <td><input name="slide-5-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-5-subtitle">Subtitle</label></td>
+      <td><input name="slide-5-subtitle" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-5-small-text">Small Text</label></td>
+      <td><input name="slide-5-small-text" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-5-cta">Call to Action (Button)</label></td>
+      <td><input name="slide-5-cta" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="slide-5-url">URL</label></td>
+      <td><input name="slide-5-url" type="text" /></td>
+    </tr>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>Home: Layout</legend>
+  <table>
+    <tr>
+      <td colspan="2">Reorder the home page sections any way you like! Enter the letter of each section you want displayed in the order that you want them to appear and separate them with a hyphen.</td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li><strong>A:</strong> Full-Width Features</li>
+          <li><strong>B:</strong> Alternating Features</li>
+          <li><strong>C:</strong> In-Line Features</li>
+          <li><strong>D:</strong> Testimonials</li>
+          <li><strong>E:</strong> Order Now</li>
+          <li><strong>F:</strong> Featured Collections</li>
+          <li><strong>G:</strong> Featured Products</li>
+          <li><strong>H:</strong> Featured Blog</li>
+          <li><strong>I:</strong> As Seen On</li>
+          <li><strong>J:</strong> Instagram Widget</li>
+        </ul>
+      </td>
+      <td><input name="home-sections-order" type="text" /><br /><small>Example: <code>A-D-B</code>.</small></td>
+    </tr>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>Home: Full-Width Features</legend>
+
+  <table>
+    <tr>
+      <td colspan="2">This section is designed to showcase your product philosophy. Display up to three Full-Width Features, either as images or videos. Expand on each feature with a title, text and call to action button.<br /><br /></td>
+    </tr>
+  </table>
+
+  <h4>Feature 1</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-full-width-1">Enable Feature</label></td>
+      <td><input name="home-show-full-width-1" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-1-style">Style</label></td>
+      <td>
+        <select name="home-full-width-1-style">
+          <option value="default">Default</option>
+          <option value="contrast">Contrast</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-1-title">Title</label></td>
+      <td><input name="home-full-width-1-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-1-text">Text</label></td>
+      <td><textarea name="home-full-width-1-text"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-1-media">Media</label></td>
+      <td>
+        <select name="home-full-width-1-media">
+          <option value="none">None</option>
+          <option value="image">Image</option>
+          <option value="video-regular">Video - Regular</option>
+          <option value="video-highlight">Video - Highlight</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-1-image.png">Image</label></td>
+      <td><input type="file" name="home-full-width-1-image.png" data-max-width="960" data-max-height="9999" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-1-video">Video Embed</label></td>
+      <td><textarea name="home-full-width-1-video"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-1-cta">Call to Action</label></td>
+      <td><input name="home-full-width-1-cta" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-1-url">URL</label></td>
+      <td><input name="home-full-width-1-url" type="text" /></td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Feature 2</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-full-width-2">Enable Feature</label></td>
+      <td><input name="home-show-full-width-2" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-2-style">Style</label></td>
+      <td>
+        <select name="home-full-width-2-style">
+          <option value="default">Default</option>
+          <option value="contrast">Contrast</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-2-title">Title</label></td>
+      <td><input name="home-full-width-2-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-2-text">Text</label></td>
+      <td><textarea name="home-full-width-2-text"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-2-media">Media</label></td>
+      <td>
+        <select name="home-full-width-2-media">
+          <option value="none">None</option>
+          <option value="image">Image</option>
+          <option value="video-regular">Video - Regular</option>
+          <option value="video-highlight">Video - Highlight</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-2-image.png">Image</label></td>
+      <td><input type="file" name="home-full-width-2-image.png" data-max-width="960" data-max-height="9999" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-2-video">Video Embed</label></td>
+      <td><textarea name="home-full-width-2-video"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-2-cta">Call to Action</label></td>
+      <td><input name="home-full-width-2-cta" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-2-url">URL</label></td>
+      <td><input name="home-full-width-2-url" type="text" /></td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Feature 3</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-full-width-3">Enable Feature</label></td>
+      <td><input name="home-show-full-width-3" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-3-style">Style</label></td>
+      <td>
+        <select name="home-full-width-3-style">
+          <option value="default">Default</option>
+          <option value="contrast">Contrast</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-3-title">Title</label></td>
+      <td><input name="home-full-width-3-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-3-text">Text</label></td>
+      <td><textarea name="home-full-width-3-text"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-3-media">Media</label></td>
+      <td>
+        <select name="home-full-width-3-media">
+          <option value="none">None</option>
+          <option value="image">Image</option>
+          <option value="video-regular">Video - Regular</option>
+          <option value="video-highlight">Video - Highlight</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-3-image.png">Image</label></td>
+      <td><input type="file" name="home-full-width-3-image.png" data-max-width="960" data-max-height="9999" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-3-video">Video Embed</label></td>
+      <td><textarea name="home-full-width-3-video"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-3-cta">Call to Action</label></td>
+      <td><input name="home-full-width-3-cta" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-full-width-3-url">URL</label></td>
+      <td><input name="home-full-width-3-url" type="text" /></td>
+    </tr>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>Home: Alternating Features</legend>
+
+  <table>
+    <tr>
+      <td colspan="2">The <a href="http://cdn.pixelunion.net/startup/alternating-features-screenshot.png" target="_blank">Alternating Features</a> are designed to explain product specifics in a clean and organized format. This section can display up to three features with alternating alignments.<br /><br /></td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-style">Style</label></td>
+      <td>
+        <select name="home-left-right-style">
+          <option value="default">Default</option>
+          <option value="contrast">Contrast</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-heading">Section Title</label></td>
+      <td><input name="home-left-right-heading" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-borders">Separate Features With a Border</label></td>
+      <td><input name="home-left-right-borders" type="checkbox" /></td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Feature 1</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-left-right-1">Enable Feature</label></td>
+      <td><input name="home-show-left-right-1" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-1-media-alignment">Media Alignment</label></td>
+      <td>
+        <select name="home-left-right-1-media-alignment">
+          <option value="left">Left</option>
+          <option value="right">Right</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-1-title">Title</label></td>
+      <td><input name="home-left-right-1-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-1-text">Text</label></td>
+      <td><textarea name="home-left-right-1-text"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-1-cta">Call to Action</label></td>
+      <td><input name="home-left-right-1-cta" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-1-url">URL</label></td>
+      <td><input name="home-left-right-1-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-1-media">Media</label></td>
+      <td>
+        <select name="home-left-right-1-media">
+          <option value="none">None</option>
+          <option value="image">Image</option>
+          <option value="video">Video</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-image-1.png">Image</label></td>
+      <td><input type="file" name="home-left-right-image-1.png" data-max-width="960" data-max-height="9999" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-1-video">Video Embed</label></td>
+      <td><textarea name="home-left-right-1-video"></textarea></td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Feature 2</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-left-right-2">Enable Feature</label></td>
+      <td><input name="home-show-left-right-2" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-2-media-alignment">Media Alignment</label></td>
+      <td>
+        <select name="home-left-right-2-media-alignment">
+          <option value="left">Left</option>
+          <option value="right">Right</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-2-title">Title</label></td>
+      <td><input name="home-left-right-2-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-2-text">Text</label></td>
+      <td><textarea name="home-left-right-2-text"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-2-cta">Call to Action</label></td>
+      <td><input name="home-left-right-2-cta" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-2-url">URL</label></td>
+      <td><input name="home-left-right-2-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-2-media">Media</label></td>
+      <td>
+        <select name="home-left-right-2-media">
+          <option value="none">None</option>
+          <option value="image">Image</option>
+          <option value="video">Video</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-image-2.png">Image</label></td>
+      <td><input type="file" name="home-left-right-image-2.png" data-max-width="960" data-max-height="9999" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-2-video">Video Embed</label></td>
+      <td><textarea name="home-left-right-2-video"></textarea></td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Feature 3</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-left-right-3">Enable Feature</label></td>
+      <td><input name="home-show-left-right-3" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-3-media-alignment">Media Alignment</label></td>
+      <td>
+        <select name="home-left-right-3-media-alignment">
+          <option value="left">Left</option>
+          <option value="right">Right</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-3-title">Title</label></td>
+      <td><input name="home-left-right-3-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-3-text">Text</label></td>
+      <td><textarea name="home-left-right-3-text"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-3-cta">Call to Action</label></td>
+      <td><input name="home-left-right-3-cta" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-3-url">URL</label></td>
+      <td><input name="home-left-right-3-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-3-media">Media</label></td>
+      <td>
+        <select name="home-left-right-3-media">
+          <option value="none">None</option>
+          <option value="image">Image</option>
+          <option value="video">Video</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-image-3.png">Image</label></td>
+      <td><input type="file" name="home-left-right-image-3.png" data-max-width="960" data-max-height="9999" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-left-right-3-video">Video Embed</label></td>
+      <td><textarea name="home-left-right-3-video"></textarea></td>
+    </tr>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>Home: In-Line Features</legend>
+
+  <table>
+    <tr>
+      <td><label for="home-in-line-style">Style</label></td>
+      <td>
+        <select name="home-in-line-style">
+          <option value="default">Default</option>
+          <option value="contrast">Contrast</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-heading">Section Title</label></td>
+      <td><input name="home-in-line-heading" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-show-in-line-images">Enable Featured Images</label></td>
+      <td><input name="home-show-in-line-images" type="checkbox" /></td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Feature 1</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-in-line-1">Enable Feature</label></td>
+      <td><input name="home-show-in-line-1" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-1-title">Title</label></td>
+      <td><input name="home-in-line-1-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-1-text">Text</label></td>
+      <td><textarea name="home-in-line-1-text"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-1-cta">Call to Action</label></td>
+      <td><input name="home-in-line-1-cta" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-1-url">URL</label></td>
+      <td><input name="home-in-line-1-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-image-1.png">Image</label></td>
+      <td><input type="file" name="home-in-line-image-1.png" data-max-width="960" data-max-height="9999" /></td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Feature 2</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-in-line-2">Enable Feature</label></td>
+      <td><input name="home-show-in-line-2" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-2-title">Title</label></td>
+      <td><input name="home-in-line-2-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-2-text">Text</label></td>
+      <td><textarea name="home-in-line-2-text"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-2-cta">Call to Action</label></td>
+      <td><input name="home-in-line-2-cta" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-2-url">URL</label></td>
+      <td><input name="home-in-line-2-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-image-2.png">Image</label></td>
+      <td><input type="file" name="home-in-line-image-2.png" data-max-width="960" data-max-height="9999" /></td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Feature 3</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-in-line-3">Enable Feature</label></td>
+      <td><input name="home-show-in-line-3" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-3-title">Title</label></td>
+      <td><input name="home-in-line-3-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-3-text">Text</label></td>
+      <td><textarea name="home-in-line-3-text"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-3-cta">Call to Action</label></td>
+      <td><input name="home-in-line-3-cta" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-3-url">URL</label></td>
+      <td><input name="home-in-line-3-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-image-3.png">Image</label></td>
+      <td><input type="file" name="home-in-line-image-3.png" data-max-width="960" data-max-height="9999" /></td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Feature 4</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-in-line-4">Enable Feature</label></td>
+      <td><input name="home-show-in-line-4" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-4-title">Title</label></td>
+      <td><input name="home-in-line-4-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-4-text">Text</label></td>
+      <td><textarea name="home-in-line-4-text"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-4-cta">Call to Action</label></td>
+      <td><input name="home-in-line-4-cta" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-4-url">URL</label></td>
+      <td><input name="home-in-line-4-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-image-4.png">Image</label></td>
+      <td><input type="file" name="home-in-line-image-4.png" data-max-width="960" data-max-height="9999" /></td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Feature 5</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-in-line-5">Enable Feature</label></td>
+      <td><input name="home-show-in-line-5" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-5-title">Title</label></td>
+      <td><input name="home-in-line-5-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-5-text">Text</label></td>
+      <td><textarea name="home-in-line-5-text"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-5-cta">Call to Action</label></td>
+      <td><input name="home-in-line-5-cta" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-5-url">URL</label></td>
+      <td><input name="home-in-line-5-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-image-5.png">Image</label></td>
+      <td><input type="file" name="home-in-line-image-5.png" data-max-width="960" data-max-height="9999" /></td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Feature 6</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-in-line-6">Enable Feature</label></td>
+      <td><input name="home-show-in-line-6" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-6-title">Title</label></td>
+      <td><input name="home-in-line-6-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-6-text">Text</label></td>
+      <td><textarea name="home-in-line-6-text"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-6-cta">Call to Action</label></td>
+      <td><input name="home-in-line-6-cta" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-6-url">URL</label></td>
+      <td><input name="home-in-line-6-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-in-line-image-6.png">Image</label></td>
+      <td><input type="file" name="home-in-line-image-6.png" data-max-width="960" data-max-height="9999" /></td>
+    </tr>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>Home: Testimonials</legend>
+
+  <table>
+    <tr>
+      <td><label for="home-testimonial-style">Style</label></td>
+      <td>
+        <select name="home-testimonial-style">
+          <option value="default">Default</option>
+          <option value="contrast">Contrast</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-heading">Section Title</label></td>
+      <td><input name="home-testimonial-heading" type="text" /></td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Testimonial 1</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-testimonial-1">Enable Testimonial</label></td>
+      <td><input name="home-show-testimonial-1" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-1-quote">Quote</label></td>
+      <td><textarea name="home-testimonial-1-quote"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-1-source">Source</label></td>
+      <td><input name="home-testimonial-1-source" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-1-use-avatar">Enable Avatar</label></td>
+      <td><input name="home-testimonial-1-use-avatar" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-1-avatar.jpg">Avatar Image</label></td>
+      <td>
+        <input type="file" name="home-testimonial-1-avatar.jpg" data-max-width="60" data-max-height="60" /><br />
+        <small>Images must have a 1:1 ratio. Maximum size: 120x120px.</small>
+      </td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Testimonial 2</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-testimonial-2">Enable Testimonial</label></td>
+      <td><input name="home-show-testimonial-2" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-2-quote">Quote</label></td>
+      <td><textarea name="home-testimonial-2-quote"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-2-source">Source</label></td>
+      <td><input name="home-testimonial-2-source" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-2-use-avatar">Enable Avatar</label></td>
+      <td><input name="home-testimonial-2-use-avatar" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-2-avatar.jpg">Avatar Image</label></td>
+      <td>
+        <input type="file" name="home-testimonial-2-avatar.jpg" data-max-width="60" data-max-height="60" /><br />
+        <small>Images must have a 1:1 ratio. Maximum size: 120x120px.</small>
+      </td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Testimonial 3</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-testimonial-3">Enable Testimonial</label></td>
+      <td><input name="home-show-testimonial-3" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-3-quote">Quote</label></td>
+      <td><textarea name="home-testimonial-3-quote"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-3-source">Source</label></td>
+      <td><input name="home-testimonial-3-source" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-3-use-avatar">Enable Avatar</label></td>
+      <td><input name="home-testimonial-3-use-avatar" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-3-avatar.jpg">Avatar Image</label></td>
+      <td>
+        <input type="file" name="home-testimonial-3-avatar.jpg" data-max-width="60" data-max-height="60" /><br />
+        <small>Images must have a 1:1 ratio. Maximum size: 120x120px.</small>
+      </td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Testimonial 4</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-testimonial-4">Enable Testimonial</label></td>
+      <td><input name="home-show-testimonial-4" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-4-quote">Quote</label></td>
+      <td><textarea name="home-testimonial-4-quote"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-4-source">Source</label></td>
+      <td><input name="home-testimonial-4-source" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-4-use-avatar">Enable Avatar</label></td>
+      <td><input name="home-testimonial-4-use-avatar" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-4-avatar.jpg">Avatar Image</label></td>
+      <td>
+        <input type="file" name="home-testimonial-4-avatar.jpg" data-max-width="60" data-max-height="60" /><br />
+        <small>Images must have a 1:1 ratio. Maximum size: 120x120px.</small>
+      </td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Testimonial 5</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-testimonial-5">Enable Testimonial</label></td>
+      <td><input name="home-show-testimonial-5" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-5-quote">Quote</label></td>
+      <td><textarea name="home-testimonial-5-quote"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-5-source">Source</label></td>
+      <td><input name="home-testimonial-5-source" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-5-use-avatar">Enable Avatar</label></td>
+      <td><input name="home-testimonial-5-use-avatar" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-5-avatar.jpg">Avatar Image</label></td>
+      <td>
+        <input type="file" name="home-testimonial-5-avatar.jpg" data-max-width="60" data-max-height="60" /><br />
+        <small>Images must have a 1:1 ratio. Maximum size: 120x120px.</small>
+      </td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>Testimonial 6</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-testimonial-6">Enable Testimonial</label></td>
+      <td><input name="home-show-testimonial-6" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-6-quote">Quote</label></td>
+      <td><textarea name="home-testimonial-6-quote"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-6-source">Source</label></td>
+      <td><input name="home-testimonial-6-source" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-6-use-avatar">Enable Avatar</label></td>
+      <td><input name="home-testimonial-6-use-avatar" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-testimonial-6-avatar.jpg">Avatar Image</label></td>
+      <td>
+        <input type="file" name="home-testimonial-6-avatar.jpg" data-max-width="120" data-max-height="120" /><br />
+        <small>Images must have a 1:1 ratio. Maximum size: 120x120px.</small>
+      </td>
+    </tr>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>Home: "Order Now" Section</legend>
+
+  <table>
+    <tr>
+      <td><label for="home-order-now-style">Style</label></td>
+      <td>
+        <select name="home-order-now-style">
+          <option value="default">Default</option>
+          <option value="contrast">Contrast</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-order-now-title">Section Title</label></td>
+      <td><input name="home-order-now-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-order-now-product">Product</label></td>
+      <td>
+        <select name="home-order-now-product" class="collection" />
+        <small>The first product in the collection selected will be displayed for the “Order Now” section.</small>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-order-now-description">Description</label></td>
+      <td>
+        <textarea name="home-order-now-description"></textarea>
+        <small>Override your long product description with one better suited to the home page.</small>
+      </td>
+    </tr>
+  </table>
+  <h3><strong>Express Checkout</strong></h3>
+  <table>
+    <tr>
+      <td><label for="home-order-now-enable-express">Enable</label></td>
+      <td>
+        <input name="home-order-now-enable-express" type="checkbox" />
+        <small>Sends the customer directly to the checkout screen after adding the product to their cart. This feature is disabled if "Line Item Properties" is enabled in the "Products" section.</small>
+      </td>
+    </tr>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>Home: Featured Collections Section</legend>
+
+  <table>
+    <tr>
+      <td><label for="home-featured-collections-style">Style</label></td>
+      <td>
+        <select name="home-featured-collections-style">
+          <option value="default">Default</option>
+          <option value="contrast">Contrast</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-featured-collections-title">Section Title</label></td>
+      <td><input name="home-featured-collections-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-featured-collection-1">Collection 1</label></td>
+      <td><select name="home-featured-collection-1" class="collection" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-featured-collection-2">Collection 2</label></td>
+      <td><select name="home-featured-collection-2" class="collection" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-featured-collection-3">Collection 3</label></td>
+      <td><select name="home-featured-collection-3" class="collection" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-featured-collections-count">Show product count</label></td>
+      <td>
+        <input name="home-featured-collections-count" type="checkbox" />
+      </td>
+    </tr>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>Home: Featured Products Section</legend>
+
+  <table>
+    <tr>
+      <td><label for="home-featured-products-style">Style</label></td>
+      <td>
+        <select name="home-featured-products-style">
+          <option value="default">Default</option>
+          <option value="contrast">Contrast</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-featured-products-title">Section Title</label></td>
+      <td><input name="home-featured-products-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-featured-products-cta">Call to Action</label></td>
+      <td><input name="home-featured-products-cta" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-featured-products-url">Call to Action URL</label></td>
+      <td><input name="home-featured-products-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-featured-products-collection">Collection</label></td>
+      <td><select name="home-featured-products-collection" class="collection" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-featured-products-per-row">Products Per Row</label></td>
+      <td>
+        <select name="home-featured-products-per-row">
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-featured-products-num-rows">Number of Rows</label></td>
+      <td>
+        <select name="home-featured-products-num-rows">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>Home: Featured Blog Section</legend>
+
+  <table>
+    <tr>
+      <td><label for="home-featured-blog-style">Style</label></td>
+      <td>
+        <select name="home-featured-blog-style">
+          <option value="default">Default</option>
+          <option value="contrast">Contrast</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-featured-blog-title">Section Title</label></td>
+      <td><input name="home-featured-blog-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-featured-blog">Blog</label></td>
+      <td><select name="home-featured-blog" class="blog" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-featured-blog-num-posts">Posts To Display</label></td>
+      <td>
+        <select name="home-featured-blog-num-posts">
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>Home: "As Seen On" Section</legend>
+
+  <table>
+    <tr>
+      <td><label for="home-as-seen-on-style">Style</label></td>
+      <td>
+        <select name="home-as-seen-on-style">
+          <option value="default">Default</option>
+          <option value="contrast">Contrast</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-heading">Section Title</label></td>
+      <td><input name="home-as-seen-on-heading" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-per-row">Logos Per Row</label></td>
+      <td>
+        <select name="home-as-seen-on-per-row">
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>'As Seen On' 1</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-as-seen-on-1">Enable</label></td>
+      <td><input name="home-show-as-seen-on-1" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-1-url">URL (Optional)</label></td>
+      <td><input name="home-as-seen-on-1-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-1.png">Logo</label></td>
+      <td>
+        <input type="file" name="home-as-seen-on-1.png" data-max-width="480" data-max-height="999" /><br />
+        <small>Logos should be at least 480px wide.</small>
+      </td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>'As Seen On' 2</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-as-seen-on-2">Enable</label></td>
+      <td><input name="home-show-as-seen-on-2" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-2-url">URL (Optional)</label></td>
+      <td><input name="home-as-seen-on-2-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-2.png">Logo</label></td>
+      <td>
+        <input type="file" name="home-as-seen-on-2.png" data-max-width="480" data-max-height="999" /><br />
+        <small>Logos should be at least 480px wide.</small>
+      </td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>'As Seen On' 3</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-as-seen-on-3">Enable</label></td>
+      <td><input name="home-show-as-seen-on-3" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-3-url">URL (Optional)</label></td>
+      <td><input name="home-as-seen-on-3-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-3.png">Logo</label></td>
+      <td>
+        <input type="file" name="home-as-seen-on-3.png" data-max-width="480" data-max-height="999" /><br />
+        <small>Logos should be at least 480px wide.</small>
+      </td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>'As Seen On' 4</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-as-seen-on-4">Enable</label></td>
+      <td><input name="home-show-as-seen-on-4" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-4-url">URL (Optional)</label></td>
+      <td><input name="home-as-seen-on-4-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-4.png">Logo</label></td>
+      <td>
+        <input type="file" name="home-as-seen-on-4.png" data-max-width="480" data-max-height="999" /><br />
+        <small>Logos should be at least 480px wide.</small>
+      </td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>'As Seen On' 5</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-as-seen-on-5">Enable</label></td>
+      <td><input name="home-show-as-seen-on-5" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-5-url">URL (Optional)</label></td>
+      <td><input name="home-as-seen-on-5-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-5.png">Logo</label></td>
+      <td>
+        <input type="file" name="home-as-seen-on-5.png" data-max-width="480" data-max-height="999" /><br />
+        <small>Logos should be at least 480px wide.</small>
+      </td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>'As Seen On' 6</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-as-seen-on-6">Enable</label></td>
+      <td><input name="home-show-as-seen-on-6" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-6-url">URL (Optional)</label></td>
+      <td><input name="home-as-seen-on-6-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-6.png">Logo</label></td>
+      <td>
+        <input type="file" name="home-as-seen-on-6.png" data-max-width="480" data-max-height="999" /><br />
+        <small>Logos should be at least 480px wide.</small>
+      </td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>'As Seen On' 7</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-as-seen-on-7">Enable</label></td>
+      <td><input name="home-show-as-seen-on-7" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-7-url">URL (Optional)</label></td>
+      <td><input name="home-as-seen-on-7-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-7.png">Logo</label></td>
+      <td>
+        <input type="file" name="home-as-seen-on-7.png" data-max-width="480" data-max-height="999" /><br />
+        <small>Logos should be at least 480px wide.</small>
+      </td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>'As Seen On' 8</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-as-seen-on-8">Enable</label></td>
+      <td><input name="home-show-as-seen-on-8" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-8-url">URL (Optional)</label></td>
+      <td><input name="home-as-seen-on-8-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-8.png">Logo</label></td>
+      <td>
+        <input type="file" name="home-as-seen-on-8.png" data-max-width="480" data-max-height="999" /><br />
+        <small>Logos should be at least 480px wide.</small>
+      </td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>'As Seen On' 9</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-as-seen-on-9">Enable</label></td>
+      <td><input name="home-show-as-seen-on-9" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-9-url">URL (Optional)</label></td>
+      <td><input name="home-as-seen-on-9-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-9.png">Logo</label></td>
+      <td>
+        <input type="file" name="home-as-seen-on-9.png" data-max-width="480" data-max-height="999" /><br />
+        <small>Logos should be at least 480px wide.</small>
+      </td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>'As Seen On' 10</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-as-seen-on-10">Enable</label></td>
+      <td><input name="home-show-as-seen-on-10" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-10-url">URL (Optional)</label></td>
+      <td><input name="home-as-seen-on-10-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-10.png">Logo</label></td>
+      <td>
+        <input type="file" name="home-as-seen-on-10.png" data-max-width="480" data-max-height="999" /><br />
+        <small>Logos should be at least 480px wide.</small>
+      </td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>'As Seen On' 11</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-as-seen-on-11">Enable</label></td>
+      <td><input name="home-show-as-seen-on-11" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-11-url">URL (Optional)</label></td>
+      <td><input name="home-as-seen-on-11-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-11.png">Logo</label></td>
+      <td>
+        <input type="file" name="home-as-seen-on-11.png" data-max-width="480" data-max-height="999" /><br />
+        <small>Logos should be at least 480px wide.</small>
+      </td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>'As Seen On' 12</h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="home-show-as-seen-on-12">Enable</label></td>
+      <td><input name="home-show-as-seen-on-12" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-12-url">URL (Optional)</label></td>
+      <td><input name="home-as-seen-on-12-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-as-seen-on-12.png">Logo</label></td>
+      <td>
+        <input type="file" name="home-as-seen-on-12.png" data-max-width="480" data-max-height="999" /><br />
+        <small>Logos should be at least 480px wide.</small>
+      </td>
+    </tr>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>Home: Instagram Widget</legend>
+
+  <table>
+    <tr>
+      <td><label for="home-instagram-style">Style</label></td>
+      <td>
+        <select name="home-instagram-style">
+          <option value="default">Default</option>
+          <option value="contrast">Contrast</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="home-instagram-title">Section title</label></td>
+      <td><input name="home-instagram-title" type="text" /></td>
+    </tr>
+    <tr>
+        <td><label for="home-instagram-access-token">Access token (<a href="http://instagram.pixelunion.net" target="_blank">?</a>)</label></td>
+        <td><input name="home-instagram-access-token" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="display-instagram-tag">Display images with specific tag</label></td>
+      <td><input name="display-instagram-tag" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="instagram-tag"></label>Tag</td>
+      <td><input name="instagram-tag" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-instagram-cta">Call to Action</label></td>
+      <td><input name="home-instagram-cta" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="home-instagram-url">Call to Action URL</label></td>
+      <td><input name="home-instagram-url" type="text" /></td>
+    </tr>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>Collections List</legend>
+
+  <table>
+    <tr>
+      <td><label for="collection-listing-linklist">Specific Link List</label></td>
+      <td><select class="linklist" name="collection-listing-linklist" /></td>
+    </tr>
+    <tr>
+      <td><label for="collections-show-description">Display Description</label></td>
+      <td><input name="collections-show-description" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="collections-per-page">Collections Per Page</label></td>
+      <td>
+        <select name="collections-per-page">
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select><br />
+        <small>Collection pagination will only work when “Specific Link List” is set to “None.”</small>
+      </td>
+    </tr>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>Collection</legend>
+
+  <table>
+    <tr>
+      <td><label for="collection-show-featured-image">Display Featured Image</label></td>
+      <td><input name="collection-show-featured-image" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="collection-show-description">Display Description</label></td>
+      <td><input name="collection-show-description" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="collection-enable-tag-filtering">Enable Tag Filtering</label></td>
+      <td><input name="collection-enable-tag-filtering" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="collection-products-per-row">Products Per Row</label></td>
+      <td>
+        <select name="collection-products-per-row">
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="collection-products-per-page">Products Per Page</label></td>
+      <td>
+        <select name="collection-products-per-page">
+          <option value="4">4</option>
+          <option value="6">6</option>
+          <option value="8">8</option>
+          <option value="10">10</option>
+          <option value="12">12</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="40">40</option>
+          <option value="50">50</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+
+  <h3>Stock Level Indicator</h3>
+  <table>
+    <tr>
+      <td><label for="product-stock-level-overlay">Enable Indicator</label></td>
+      <td><input name="product-stock-level-overlay" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="product-stock-level-overlay-threshold">Display When Stock is Lower Than:</label></td>
+      <td><input name="product-stock-level-overlay-threshold" type="text" /></td>
+    </tr>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>Products</legend>
+
+  <h3><strong>General</strong></h3>
+  <table>
+    <tr>
+      <td><label for="product-enable-zoom">Enable Zooming on Product Images</label></td>
+      <td><input name="product-enable-zoom" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="product-display-vendor">Display Names of Vendors</label></td>
+      <td><input name="product-display-vendor" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="product-show-share-buttons">Display Share Buttons</label></td>
+      <td><input name="product-show-share-buttons" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="product-show-related">Enable Related Products</label></td>
+      <td><input name="product-show-related" type="checkbox" /></td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>
+    <strong>Slideshow</strong><br />
+    <small>The slideshow can be enabled on a product by product basis by changing the product's template to <code>product.slideshow</code>. You can change any product's template at the bottom of the product edit screen for that product.</small>
+  </h4>
+  <table class="standard-table">
+    <tr>
+      <td><label for="product-slideshow-layout">Layout</label></td>
+      <td>
+        <select name="product-slideshow-layout">
+          <option value="content-width">Content Width</option>
+          <option value="full-width">Full-Width</option>
+          <option value="full-bleed">Full-Width, Full-Bleed</option>
+          <option value="opening-screen">Full-Width/Height, Full-Bleed</option>
+        </select><br />
+        <small><a href="http://cdn.pixelunion.net/startup/startup-slideshow-layouts.png" target="_blank">Style examples</a></small>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="product-slideshow-transition">Transition</label></td>
+      <td>
+        <select name="product-slideshow-transition">
+          <option value="transition-slide">Slide</option>
+          <option value="transition-fade">Fade</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="show-product-slideshow-navigation">Enable Slideshow Navigation (Prev/Next)</label></td>
+      <td><input name="show-product-slideshow-navigation" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="show-product-slideshow-pagination">Enable Slideshow Pagination</label></td>
+      <td><input name="show-product-slideshow-pagination" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="product-slideshow-color">Navigation/Pagination Colour</label></td>
+      <td><input name="product-slideshow-color" type="text" class="color" /></td>
+    </tr>
+    <tr>
+      <td><label for="product-slideshow-autoplay">Enable Autoplay</label></td>
+      <td><input name="product-slideshow-autoplay" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="product-slideshow-autoplay-delay">Autoplay Delay (in Seconds)</label></td>
+      <td><input name="product-slideshow-autoplay-delay" type="text" /></td>
+    </tr>
+    <tr>
+      <td colspan="2"><hr /></td>
+    </tr>
+    <tr>
+      <td colspan="2"><small>You may need to use <strong>overrides</strong> for the header when using the "Full-Width, Full-Bleed" or "Full-Width/Height, Full-Bleed" slideshow layouts.</small></td>
+    </tr>
+    <tr>
+      <td><label for="product-header-bleed-colors">Header Colours Override</label></td>
+      <td>
+        <select name="product-header-bleed-colors">
+          <option value="default" selected="selected">Default Colours</option>
+          <option value="light">White</option>
+          <option value="dark">Black</option>
+        </select><br />
+        <small></small>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"><small>If you have selected either the "White" or "Black" Header Colours Override you may want to upload additional logos:</small></td>
+    </tr>
+    <tr>
+      <td><label for="product-bleed-use-logo">Enable Logo Override</label></td>
+      <td><input name="product-bleed-use-logo" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="product-bleed-logo-image">Regular Logo Override</label></td>
+      <td><input name="product-bleed-logo.png" type="file" data-max-width="300" data-max-height="200" /></td>
+    </tr>
+    <tr>
+      <td><label for="product-bleed-use-logo-retina">Enable Retina Logo Override</label></td>
+      <td><input name="product-bleed-use-logo-retina" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="product-bleed-logo-image-retina">Retina Logo Override</label></td>
+      <td><input name="product-bleed-logo-retina.png" type="file" data-max-width="600" data-max-height="400" /></td>
+    </tr>
+  </table>
+
+  <br />
+  <h4>
+    <strong>Additional Info Links</strong><br />
+    <small><a href="https://s3.amazonaws.com/cdn.pixelunion.net/startup/additional-info-screenshot.png" target="_blank">Additional Info Links</a> appear wherever a customer can view product information. They’re perfect for linking to size charts, refund policies, or ordering details. Pick from six unique icons.</small>
+  </h4><br />
+  <table class="standard-table">
+    <tr>
+      <td><label for="product-show-info-link-1">Enable Link 1</label></td>
+      <td><input name="product-show-info-link-1" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="product-info-link-text-1">Text</label></td>
+      <td><input name="product-info-link-text-1" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="product-info-link-url-1">URL</label></td>
+      <td><input name="product-info-link-url-1" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="product-info-link-icon-1">Icon</label></td>
+      <td>
+        <select name="product-info-link-icon-1">
+          <option value="info">Information (<em>i</em>)</option>
+          <option value="question-mark">Question Mark</option>
+          <option value="ruler">Ruler</option>
+          <option value="envelope">Envelope</option>
+          <option value="pencil">Pencil</option>
+          <option value="shirt">Shirt</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+  <br />
+  <table class="standard-table">
+    <tr>
+      <td><label for="product-show-info-link-2">Enable Link 2</label></td>
+      <td><input name="product-show-info-link-2" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="product-info-link-text-2">Text</label></td>
+      <td><input name="product-info-link-text-2" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="product-info-link-url-2">URL</label></td>
+      <td><input name="product-info-link-url-2" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="product-info-link-icon-2">Icon</label></td>
+      <td>
+        <select name="product-info-link-icon-2">
+          <option value="info">Information (<em>i</em>)</option>
+          <option value="question-mark">Question Mark</option>
+          <option value="ruler">Ruler</option>
+          <option value="envelope">Envelope</option>
+          <option value="pencil">Pencil</option>
+          <option value="shirt">Shirt</option>
+        </select>
+      </td>
+    </tr>
+  </table><br />
+</fieldset>
+
+<fieldset>
+  <legend>Blog</legend>
+
+  <h3>Index</h3>
+  <table>
+    <tr>
+      <td><label for="articles-per-page">Articles Per Page</label></td>
+      <td>
+        <select name="articles-per-page">
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="blog-show-rss-icon">Display RSS Icon</label></td>
+      <td><input name="blog-show-rss-icon" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="blog-show-tags">Display Tags</label></td>
+      <td><input name="blog-show-tags" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="blog-show-author">Display Post Author</label></td>
+      <td><input name="blog-show-author" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="blog-show-comment-count">Display Comment Count</label></td>
+      <td><input name="blog-show-comment-count" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="blog-show-share-buttons">Display Share Buttons</label></td>
+      <td><input name="blog-show-share-buttons" type="checkbox" /></td>
+    </tr>
+  </table>
+
+  <h3>Articles</h3>
+  <table>
+    <tr>
+      <td><label for="post-show-share-buttons">Display Share Buttons</label></td>
+      <td><input name="post-show-share-buttons" type="checkbox" /></td>
+    </tr>
+  </table>
+
+</fieldset>
+
+<fieldset>
+  <legend>Contact</legend>
+
+  <table>
+    <tr>
+      <td><label for="contact-page-title">Section Title</label></td>
+      <td><input name="contact-page-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="contact-page-success">Success Message</label></td>
+      <td><textarea name="contact-page-success"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="contact-page-error">Error Message</label></td>
+      <td><textarea name="contact-page-error"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <small><strong>Note: </strong> Add a contact form to any page by editing the page and selecting “page.contact” as the page template.</small>
+      </td>
+    </tr>
+  </table>
+
+</fieldset>
+
+<fieldset>
+  <legend>Cart</legend>
+
+  <h3><strong>Special Instructions</strong></h3>
+  <table>
+    <tr>
+      <td><label for="cart-show-special-instructions">Enable Special Instructions</label></td>
+      <td><input name="cart-show-special-instructions" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td colspan="2"><small><strong>Note: </strong> The special instructions feature gives your customers the ability to offer special instructions for shipping on checkout.</small></td>
+    </tr>
+  </table>
+
+  <h3><strong>Shipping Calculator</strong></h3>
+  <table>
+    <tr>
+      <td><label for="show-shipping-calculator">Enable Calculator</label></td>
+      <td><input id="show-shipping-calculator" name="show-shipping-calculator" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="shipping_calculator_default_country">Default Country</label></td>
+      <td>
+        <input type="text" name="shipping_calculator_default_country" id="shipping_calculator_default_country" size="30" value="United States" /><br />
+        <small>
+          <strong>Note: </strong>
+          If a customer is logged-in, their default shipping address country will be selected. <br />
+          Unsure about spelling? Refer to the first checkout page.
+        </small>
+      </td>
+    </tr>
+  </table>
+
+</fieldset>
+
+<fieldset>
+  <legend>Newsletter</legend>
+
+  <h3>
+    <strong>General</strong><br />
+    <small>See the <a href="http://help.pixelunion.net/customer/portal/articles/1565085-documentation" target="_blank">documentation</a> for help connecting a MailChimp or Campaign Monitor account.</small>
+  </h3>
+  <table>
+    <tr>
+      <td><label for="display-mailing-list">Enable Newsletter</label></td>
+      <td><input name="display-mailing-list" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="mailing-list-platform">Platform</label></td>
+      <td>
+        <select name="mailing-list-platform">
+          <option value="mailchimp">MailChimp</option>
+          <option value="campaign-monitor">Campaign Monitor</option>
+          <option value="shopify-customer">Shopify Customer List</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="mailing-list-title">Title</label></td>
+      <td><input name="mailing-list-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="mailing-list-blurb">Blurb</label></td>
+      <td><input name="mailing-list-blurb" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="mailing-list-action-url">Form 'Action' URL</label></td>
+      <td><input name="mailing-list-action-url" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="">Campaign Monitor Input 'Name'</label></td>
+      <td><input name="campaign-monitor-name" type="text" /></td>
+    </tr>
+  </table>
+
+  <h3>
+    <strong>Success Modal</strong><br />
+    <small>Modal settings only apply if you have selected "Shopify Customer List" as your <em>Platform</em>.</small>
+  </h3>
+  <table>
+    <tr>
+      <td><label for="mailing-list-modal-title">Title</label></td>
+      <td><input name="mailing-list-modal-title" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="mailing-list-modal-description">Description</label></td>
+      <td><input name="mailing-list-modal-description" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="mailing-list-modal-button-text">Button Text</label></td>
+      <td><input name="mailing-list-modal-button-text" type="text" /></td>
+    </tr>
+  </table>
+
+  <h3><strong>Home page</strong></h3>
+  <table>
+    <tr>
+      <td><label for="home-mailing-list-style">Style</label></td>
+      <td>
+        <select name="home-mailing-list-style">
+          <option value="default">Default</option>
+          <option value="contrast">Contrast</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>Footer</legend>
+
+  <h3><strong>General</strong></h3>
+  <table>
+    <tr>
+      <td><label for="footer-show-headers">Display Column Titles</label></td>
+      <td><input name="footer-show-headers" type="checkbox" /></td>
+    </tr>
+  </table>
+
+  <h3><strong>Navigation</strong></h3>
+  <table>
+    <tr>
+      <td><label for="footer-link-list-1">Link List 1</label></td>
+      <td><select class="linklist" name="footer-link-list-1" /></td>
+    </tr>
+    <tr>
+      <td><label for="footer-link-list-2">Link List 2</label></td>
+      <td><select class="linklist" name="footer-link-list-2" /></td>
+    </tr>
+    <tr>
+      <td><label for="footer-link-list-3">Link List 3</label></td>
+      <td><select class="linklist" name="footer-link-list-3" /></td>
+    </tr>
+  </table>
+
+  <h3><strong>Social Icons</strong></h3>
+  <table>
+    <tr>
+      <td colspan="2">
+        Startup will automatically display social icons based on the links you provide in your social link list. For this feature to work, the link list you wish to add social icons to must have the handle "social-icons". See the <a href="http://help.pixelunion.net/customer/portal/articles/1565085-documentation" target="_blank">documentation</a> for further assistance.
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"><small><strong>Supported social networks:</strong> 500px, Behance, Blogger, Dailymotion, Delicious, Digg, Dribbble, Facebook, Feedburner, Flickr, Foursquare, GitHub, Google, Grooveshark, Instagram, last.fm, LinkedIn, MySpace, Pinterest, Reddit, Skype, Slideshare, Soundcloud, Spotify, Steam, Stumbleupon, Tumblr, Twitter, Vimeo, Vine, WordPress, Yahoo, Yelp, YouTube.</small></td>
+    </tr>
+  </table><br />
+
+  <h3><strong>Sharing</strong></h3>
+  <table>
+    <tr>
+      <td><label for="footer-show-sharing">Enable Sharing Module</label></td>
+      <td><input name="footer-show-sharing" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="footer-sharing-header">Title</label></td>
+      <td><input name="footer-sharing-header" type="text" /></td>
+    </tr>
+    <tr>
+      <td><label for="footer-sharing-intro">Text</label></td>
+      <td><textarea name="footer-sharing-intro" /></td>
+    </tr>
+    <tr>
+      <td><label for="footer-show-tweet">Display Tweet Button (Twitter)</label></td>
+      <td><input name="footer-show-tweet" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="footer-show-like">Display Like Button (Facebook)</label></td>
+      <td><input name="footer-show-like" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="footer-show-like">Display Like Button (Instagram)</label></td>
+      <td><input name="footer-show-insta" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="footer-show-pin">Display Pin Button (Pinterest)</label></td>
+      <td><input name="footer-show-pin" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="footer-show-plus">Display Plus Button (Google+)</label></td>
+      <td><input name="footer-show-plus" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td><label for="footer-show-fancy">Display Fancy Button (Fancy)</label></td>
+      <td><input name="footer-show-fancy" type="checkbox" /></td>
+    </tr>
+  </table>
+
+  <h3>
+    <strong>Payment Icons</strong><br />
+    <small>Payment icons are displayed below your store's copyright message in the footer.</small>
+  </h3>
+  <table>
+    <tr>
+      <td><label for="footer-show-payment-options">Enable Payment Icons</label></td>
+      <td><input type="checkbox" name="footer-show-payment-options" /></td>
+    </tr>
+    <tr>
+      <td><label for="show-diners-club">Diners Club</label></td>
+      <td><input type="checkbox" name="show-diners-club" /></td>
+    </tr>
+    <tr>
+      <td><label for="show-maestro">Maestro</label></td>
+      <td><input type="checkbox" name="show-maestro" /></td>
+    </tr>
+    <tr>
+      <td><label for="show-interac">Interac</label></td>
+      <td><input type="checkbox" name="show-interac" /></td>
+    </tr>
+    <tr>
+      <td><label for="show-visa">Visa</label></td>
+      <td><input type="checkbox" name="show-visa" /></td>
+    </tr>
+    <tr>
+      <td><label for="show-mastercard">Mastercard</label></td>
+      <td><input type="checkbox" name="show-mastercard" /></td>
+    </tr>
+    <tr>
+      <td><label for="show-discover">Discover</label></td>
+      <td><input type="checkbox" name="show-discover" /></td>
+    </tr>
+    <tr>
+      <td><label for="show-dk">Dankort</label></td>
+      <td><input type="checkbox" name="show-dk" /></td>
+    </tr>
+    <tr>
+      <td><label for="show-american-express">American Express</label></td>
+      <td><input type="checkbox" name="show-american-express" /></td>
+    </tr>
+    <tr>
+      <td><label for="show-google-wallet">Google Wallet</label></td>
+      <td><input type="checkbox" name="show-google-wallet" /></td>
+    </tr>
+    <tr>
+      <td><label for="show-paypal">PayPal</label></td>
+      <td><input type="checkbox" name="show-paypal" /></td>
+    </tr>
+    <tr>
+      <td><label for="show-jcb">JCB</label></td>
+      <td><input type="checkbox" name="show-jcb" /></td>
+    </tr>
+    <tr>
+      <td><label for="show-cirrus">Cirrus</label></td>
+      <td><input type="checkbox" name="show-cirrus" /></td>
+    </tr>
+    <tr>
+      <td><label for="show-stripe">Stripe</label></td>
+      <td><input type="checkbox" name="show-stripe" /></td>
+    </tr>
+    <tr>
+      <td><label for="show-bitcoins">Bitcoins</label></td>
+      <td><input type="checkbox" name="show-bitcoins" /></td>
+    </tr>
+  </table>
+
+</fieldset>
+
+<fieldset>
+  <legend>Advanced</legend>
+
+  <table>
+    <tr>
+      <td>
+        <label for="disable-ajax">Disable Ajax</label>
+        <small>Check this if you're having trouble integrating with 3rd Party apps or use line item properties</small>
+      </td>
+      <td><input name="disable-ajax" type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td>
+        <label for="custom-css">Custom CSS</label>
+        <small>Add any style overrides that aren't available through the theme's settings</small>
+      </td>
+      <td><textarea name="custom-css" rows="10"></textarea></td>
+    </tr>
+  </table>
+</fieldset>

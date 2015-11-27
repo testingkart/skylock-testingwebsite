@@ -1,0 +1,16 @@
+{% assign index = false %}
+{% if template == 'blog' %}{% assign index = true %}{% endif %}
+
+<article class="blog-post clearfix">
+
+    <h1 class="page-title">{{ article.title }}</h1>
+
+  <div class="post-meta meta">
+    <p class="post-date">{{ article.published_at | date: format: 'short_month' }}</p>
+  </div>
+
+  <div class="rte post-content">
+      {{ article.content }}
+  </div>
+
+</article>

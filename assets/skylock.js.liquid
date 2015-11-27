@@ -1,0 +1,79 @@
+function show_video() {
+    //console.info("show video");
+    var youtube_html = '<div id="scrim"><span class="close-button">×</span><iframe id="youtube-player" src="//www.youtube.com/embed/6gyLPjDakAc?wmode=opaque&vq=hd1080&rel=0&controls=1&showinfo=0&enablejsapi=1&origin=https://skylock.cc&autoplay=1" frameborder="0" allowfullscreen></iframe></div>';
+    $("body").append(youtube_html);
+    $("#scrim").on("click", function() {
+        hide_video();
+    });
+    $(window).on("scroll", function() {
+        hide_video();
+    });
+    $("#scrim").css('visibility','visible').hide().fadeIn(400);
+    setVideoSize();
+}
+function setVideoSize() {
+    var height = $(window).height();
+    var width = $(window).width();
+    var video_ratio = 0.562;
+    var youtube_player = $("#youtube-player");
+    if (height / width < video_ratio) {
+        youtube_player.height(parseInt(height * 0.9));
+        youtube_player.width(parseInt(height * 0.9 / video_ratio));
+    } else {
+        youtube_player.width(parseInt(width * 0.9));
+        youtube_player.height(parseInt(width * 0.9 * video_ratio));
+    }
+}
+function hide_video() {
+    var obj = $("#scrim");
+    obj.fadeOut(300, function() {
+        obj.remove(); 
+    });
+}
+
+function checkoutStatus() {
+    if ($("#tos-checkbox").is(":checked") && product_count > 0) {
+        $("#checkout").attr("disabled",false);
+    } else {
+        $("#checkout").attr("disabled",true);
+    }
+}
+
+function findBootstrapEnvironment() {
+    var envs = ['xs', 'sm', 'md', 'lg'];
+
+    $el = $('<div>');
+    $el.appendTo($('body'));
+
+    for (var i = envs.length - 1; i >= 0; i--) {
+        var env = envs[i];
+
+        $el.addClass('hidden-'+env);
+        if ($el.is(':hidden')) {
+            $el.remove();
+            return env
+        }
+    };
+}
+
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+

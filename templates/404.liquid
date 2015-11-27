@@ -1,0 +1,23 @@
+<meta name="robots" content="noindex, follow" />
+
+<script>
+$(function () {
+    var pathname = window.location.pathname;
+    if (pathname.indexOf("updates") > -1) {
+        window.location.href = "http://skylock.cc/blogs/news/";
+    } else if (pathname.indexOf("/faq") == 0) {
+        window.location.href = "http://skylock.cc/pages/faq/";
+    } else {
+        window.location.href = "http://skylock.cc/";
+    }
+});
+
+</script>
+<noscript>
+<h1 class="page-title">
+Ooops. This page is missing page.
+</h1>
+
+<div class="rte">
+    <a href="http://skylock.cc/">Click to return to the main page.</a>
+</noscript>
